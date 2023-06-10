@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.image-mobile, .image-desktop {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: 92%;
+        height: 90%;
+        gap: 30px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        gap: 18px;
+    }
+
+    .image-mobile {
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    h1 {
+        color: hsl(228, 12%, 48%);
+        font-size: small;
+        font-weight: 500;
+        letter-spacing: 6px;
+        width: 100%;
+    }
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-size: xx-large;
+    }
+
+    .description {
+        color: hsl(228, 12%, 48%);
+        line-height: 25px;
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+
+    .price {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .price-left {
+        color:hsl(158, 36%, 37%);
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: xx-large;
+    }
+
+    .price-right {
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+        font-size: small;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        gap: 15px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: hsl(212, 21%, 14%);
+    }
+
+    .cart-icon {
+        width: 15px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .image-desktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 35%;
+        height: 55%;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .image-desktop {
+        display: block;
+        width: auto;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .content {
+        height: 100%;
+        width: 50%;
+        padding: 10px 20px 0px;
+    }
+    
+    h1 {
+        color: hsl(228, 12%, 48%);
+        font-size: smaller;
+        font-weight: 500;
+        letter-spacing: 6px;
+        width: 100%;
+    }
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-size: x-large;
+    }
+
+    .description {
+        color: hsl(228, 12%, 48%);
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+
+    .price {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .price-left {
+        color:hsl(158, 36%, 37%);
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: xx-large;
+    }
+
+    .price-right {
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+        font-size: small;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        gap: 15px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: hsl(212, 21%, 14%);
+    }
+
+    .cart-icon {
+        width: 15px;
+    }
+}
